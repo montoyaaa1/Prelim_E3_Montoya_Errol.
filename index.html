@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href="index.html" class="nav-link">Home</a> |
+            <a href="home.html" class="nav-link active">Profile</a>
+        </nav>
+
+        <h1>Profile Page</h1>
+        <button onclick="toggleDarkMode()">Switch to Dark Mode</button>
+        
+        <img src="profile.png" alt="Profile" class="profile-img">
+        
+        <h2>Errol Montoya</h2>
+        <p><strong>Email:</strong> errolod16@gmail.com</p>
+        <p><strong>Bio:</strong> Software Developer.</p>
+    </div>
+
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
